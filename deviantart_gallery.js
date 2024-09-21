@@ -5,10 +5,10 @@ const GALLERY_DIV_ID = 'deviantart-gallery'
 window.onload = () => {
     const gallery_div = document.getElementById(GALLERY_DIV_ID)
     const GALLERY_ID = gallery_div.getAttribute('gallery-id')
-    // if (!GALLERY_ID) {
-    //     console.error('gallery-id undefined')
-    //     return
-    // }
+    if (!GALLERY_ID) {
+        console.error('gallery-id undefined')
+        return
+    }
 
     const parser = new DOMParser()
     
